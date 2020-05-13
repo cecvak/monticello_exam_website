@@ -1,0 +1,20 @@
+$font-family-source-sans: 'Source Sans Pro', sans-serif;
+$font-family-montserrat: 'Montserrat', sans-serif;
+$font-family-open-sans: 'Open Sans', sans-serif;
+
+@mixin h1 {
+    font-family: $font-family-montserrat;
+    font-size: 80px;
+    font-weight: 700;
+}
+
+@mixin h2 {
+    font-family: $font-family-montserrat;
+    font-size: 44px;
+    font-weight: 700;
+}
+
+@mixin nav-text {
+    font-family: $font-family-source-sans;
+    font-size: 14px;
+}

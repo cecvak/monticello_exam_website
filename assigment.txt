@@ -1,0 +1,69 @@
+xRequirements - Terms of Reference:
+
+1. Add :hover, :focus effects to interactive elements
+
+2. Execute smooth scrolling to the selected section when clicking the menu item 
+
+3. Smooth scroll to Projects when clicking the arrow icon in the first section
+
+4. Header and News sliders:
+
+4.1 HEADER - the image and the text are one slide
+
+4.2 NEWS - every piece of news is a slide, shown one at a time. Automatic scroll with 4-sec delay.
+
+5. A working map with a custom icon. Map styles can be created here https://mapstyle.withgoogle.com/
+
+Criteria - Points:
+
+1. Layout - section completion (5 points)
+
+a. 1 p - HEADER
+
+b. 1 p - PROJECTS
+
+c. 1 p - NEWS
+
+d. 1 p - GALLERY
+
+e. 1 p - CONTACT + FOOTER
+
+2. JS (5 points)
+
+a. 1 p - HEADER slider
+
+b. 1 p - NEWS slider
+
+c. 1 p - Map
+
+d. 1 p - Smooth navigation and buttons scroll to sections
+
+e. 1 p - Form validation
+
+Requirements:
+
+1. Name the project Monticello
+
+2. Valid HTML/CSS
+
+3. Semantic layout
+
+4. Match the template (use pixel perfect) 
+
+5. Fonts as in the template
+
+6. Connect fonts via Google Fonts
+
+7. Cross Browser: Chrome, Firefox
+
+8. All the interactive elements should have :hover, :focus styles
+
+9. Use favicon
+
+10. Use preprocessors
+
+9. Use BEM
+
+10. Use SVG where possible
+
+Upload the solution to GitHub or pack an archive 20 mins prior to the end.
