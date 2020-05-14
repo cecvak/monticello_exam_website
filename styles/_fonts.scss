@@ -14,6 +14,21 @@ $font-family-open-sans: 'Open Sans', sans-serif;
     font-weight: 700;
 }
 
+@mixin h4 {
+    font-family: $font-family-montserrat;
+    font-size: 22px;
+}
+
+@mixin h5 {
+    font-family: $font-family-montserrat;
+    font-size: 18px;
+}
+
+@mixin p {
+    font-family: $font-family-open-sans;
+    font-size: 18px;
+}
+
 @mixin nav-text {
     font-family: $font-family-source-sans;
     font-size: 14px;
