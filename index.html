@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Monticello</title>
 
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" type="text/css" href="styles/slick/slick.css"/>
@@ -15,38 +15,42 @@
     <script src="https://kit.fontawesome.com/19c75b59f6.js" crossorigin="anonymous"></script>
 </head>
 <body>
-
-    <div class="container">
+    <main>
         <header>
             <nav>
                 <img src="/images/logo.png" alt="Monticello log" class="logo">
                 <ul class="navigation-menu">
                     <li class="navigation-menuItem">
-                        <svg height="9" width="9">
+                        <img class="dot" src="images/circle-solid.svg" alt="">
+                        ABOUT US
+                        <!-- <svg height="9" width="9">
                             <circle cx="5" cy="5" r="4" stroke="white" stroke-width="1" fill="white" />
                             Sorry, your browser does not support inline SVG.  
-                        </svg> 
-                        ABOUT US
+                        </svg>  -->
+                        
                     </li>
                     <li class="navigation-menuItem">
-                        <svg height="9" width="9">
+                        <img class="dot" src="images/circle-regular.svg" alt="">
+                        <!-- <svg height="9" width="9">
                             <circle cx="5" cy="5" r="4" stroke="white" stroke-width="1" fill="none" />
                             Sorry, your browser does not support inline SVG.  
-                        </svg> 
+                        </svg>  -->
                         PROJECTS
                     </li>
                     <li class="navigation-menuItem">
-                        <svg height="9" width="9">
+                        <img class="dot" src="images/circle-regular.svg" alt="">
+                        <!-- <svg height="9" width="9">
                             <circle cx="5" cy="5" r="4" stroke="white" stroke-width="1" fill="none" />
                             Sorry, your browser does not support inline SVG.  
-                        </svg>
+                        </svg> -->
                         NEWS
                     </li>
                     <li class="navigation-menuItem">
-                        <svg height="9" width="9">
+                        <img class="dot" src="images/circle-regular.svg" alt="">
+                        <!-- <svg height="9" width="9">
                             <circle cx="5" cy="5" r="4" stroke="white" stroke-width="1" fill="none" />
                             Sorry, your browser does not support inline SVG.  
-                        </svg>
+                        </svg> -->
                         CONTACT
                     </li>
                 </ul>
@@ -90,7 +94,7 @@
             
         </header>
 
-        <div class="section section-projects" id="projects">
+        <section class="section-projects" id="projects">
             <!-- small line -->
             <hr class="section-line">
             <h2 class="section-heading blue">WHAT WE DO</h2>
@@ -105,32 +109,32 @@
                             <h4>ONE WORLD</h4>
                             <h2>TRADE CENTER</h2>
                             <p>Increasing prosperity in our lives can be accomplished by having the right frame of mind. The truth is, our thoughts are very powerful.</p>
-                            <button>MORE DETAILS</button>
-                            <p class="small-italic">New York City, United States - 1776 feet</p>
+                            <button class="button-large button-projects">MORE DETAILS</button>
+                            <p class="small-italic"><i class="fas fa-map-marker-alt project-marker"></i>New York City, United States - 1776 feet</p>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class=" project-block project-block-right">
+            <div class="project-block project-block-right">
                 <!-- purple rectangle -->
                 <div class="project-rectangle project-rectangle-two"> </div>
                 <div class="project-content-container ">
                     <div class="project-content project-content-right" >
                         <img src="/images/building_two.png" alt="Building">
-                        <div class="project-text" >
+                        <div class="project-text project-text__two" >
                             <h4>INTERNATIONAL</h4>
                             <h2>COMMERCE CENTRE</h2>
                             <p>Successful businesses have many things in common, today we’ll look at the big ‘R’ of recognition and how a digital advertising network may help.</p>
-                            <button class="button-large">MORE DETAILS</button>
-                            <p class="small-italic">Hong Kong - 1588 feet</p>
+                            <button class="button-large button-projects">MORE DETAILS</button>
+                            <p class="small-italic"><i class="fas fa-map-marker-alt project-marker"></i>Hong Kong - 1588 feet</p>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <div class="section section-news">
+        <section class="section-news">
             <hr class="section-line">
             <h2 class="section-heading white">LATEST NEWS</h2>
 
@@ -175,7 +179,7 @@
                         <h4>HYPNOTIZE YOURSELF INTO THE GHOST.</h4>
                         <p>There are many things that are important to catalog design...</p>
                     <div class="news-author">
-                        <img class="author-img" src="/images/alja.png" alt="">
+                        <img class="author-img" src="/images/alice.png" alt="">
                         <div class="news-author-text">
                             <p>ALICE WARD</p>
                             <p class="text-small">30 Nov 2019</p>
@@ -215,9 +219,9 @@
                 </div>
             </div>
         </div>
-        </div>
+    </section>
 
-        <div class="section section-gallery">
+        <section class="section-gallery">
             <hr class="section-line">
             <h2 class="section-heading blue">GALLERY</h2>
         
@@ -231,13 +235,47 @@
                 <div class="gallery-grid-item5"><img src="/images/gallery5.png" alt=""></div>
             </div>
             <button class="button-large">SEE MORE</button>
-        </div>
+        </section>
 
-        <div class="section section-contact">
-            <!-- include map -->
-        </div>
+        <section class="section-contact">
+            <!-- map -->
+            <div class="contact_map" id="map">
+            </div>
+            <!-- contact form -->
+            <div class="contact-block">
+                <hr class="section-line">
+                <h2 class="section-heading blue">GET IN TOUCH</h2>
+                <div class="contact-block__contact">
+                    <div class="contact-address">
+                        <p>91 Nolan Extensions Suite 670</p>
+                        <p>+001 356-868-2454</p>
+                        <p>montichello@service.com</p>
+                        <p>From 07:05AM to 19:30PM</p> 
+                    </div>
+                    <form action="">
+                        <input type="text" id="name" name="name" placeholder="Your name">
+                        <input type="text" id="email" name="email" placeholder="Email">
+                        <button>SUBMIT</button>
+                    </form>
+                </div>
+            </div>
+
+        </section>
 
         <footer>
+            <div class="footer-content">
+                <div class="footer-row1">
+                    <img src="/images/logo.png" alt="" class="logo">
+                    <div class="footer-social navigation-social">
+                        <p><i class="fab fa-facebook-f"></i></p>
+                        <p><i class="fab fa-twitter"></i></p>
+                        <p><i class="fab fa-instagram"></i></p>
+                    </div>
+                </div>
+                <div class="footer-row2">
+                    <p>Copyrights © 2020 Montichello</p>
+                </div>
+            </div>
 
         </footer>
 
@@ -245,10 +283,13 @@
 
 
 
-    </div>
+    </main>
     
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
+    <!-- REMEMBER TO ADD API KEY TO MAP! -->
+    <script src="https://maps.googleapis.com/maps/api/js?key="></script>   
+
     <script src="src/script.js"></script>
     <script type="text/javascript" src="styles/slick/slick.min.js"></script>
 </body>

@@ -3,6 +3,7 @@ h1 {
   font-size: 80px;
   font-weight: 700;
   color: white;
+  margin: 0;
 }
 
 h2 {
@@ -24,17 +25,20 @@ h4 {
   font-family: "Montserrat", sans-serif;
   font-size: 22px;
   font-weight: normal;
+  margin: 0;
 }
 
 h5 {
   font-family: "Montserrat", sans-serif;
   font-size: 18px;
   font-weight: normal;
+  margin: 0;
 }
 
 p {
   font-family: "Open Sans", sans-serif;
   font-size: 18px;
+  margin: 0;
 }
 
 p.small-italic {
@@ -43,21 +47,14 @@ p.small-italic {
 }
 
 body {
-  min-width: 1600px;
   width: 100%;
-  -ms-overflow-style: none;
 }
 
 /* Hide scrollbar for Chrome, Safari and Opera */
-body::-webkit-scrollbar {
-  display: none;
-}
-
 header {
   background-image: url(/images/tu-tram-pham-202263.png), linear-gradient(90deg, #55B7FF, #7E5AFF);
   background-size: cover;
-  min-height: 100vh;
-  height: 100%;
+  height: 800px;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -69,7 +66,6 @@ nav {
   width: 1170px;
   height: 54px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
   font-family: "Source Sans Pro", sans-serif;
   font-size: 14px;
@@ -82,8 +78,13 @@ nav {
   height: 54px;
 }
 
+nav .logo {
+  margin-right: 144px;
+}
+
 ul {
   display: flex;
+  padding: 0;
 }
 
 li {
@@ -95,9 +96,20 @@ li {
   justify-content: space-between;
 }
 
+.navigation-menu-item {
+  color: white;
+}
+
 .navigation-social {
   width: 160px;
   justify-content: space-between;
+  margin-left: 110px;
+  margin-right: 0;
+}
+
+.dot {
+  height: 9px;
+  margin-right: 14px;
 }
 
 .header-content {
@@ -105,13 +117,15 @@ li {
   display: flex;
   flex-direction: column;
   align-items: center;
-  position: absolute;
-  bottom: 50px;
+  height: 100%;
+  padding-bottom: 50px;
 }
 
 .header-slider {
   width: 917px;
   height: 380px;
+  margin-top: 223px;
+  margin-bottom: 0;
 }
 
 .slider-content {
@@ -119,13 +133,36 @@ li {
   color: white;
 }
 
-.slick-dots {
+.slider-content h1 {
+  margin-bottom: 20px;
+  letter-spacing: 0.09em;
+}
+
+.slider-content h5 {
+  letter-spacing: 0.3em;
+}
+
+.header-slider > .slick-dots {
   display: flex;
   flex-wrap: wrap;
   height: 210px;
   width: 10px;
-  top: 0;
-  right: -300px;
+  top: -40px;
+  right: -280px;
+}
+
+.slick-dots li.slick-active button:before {
+  content: url(/images/circle-solid.svg);
+}
+
+.slick-dots li button:before {
+  content: url(/images/circle-regular.svg);
+  width: 10px;
+  height: 10px;
+}
+
+.slick-dotted.slick-slider {
+  margin-bottom: 0;
 }
 
 .header-bottom {
@@ -137,7 +174,7 @@ li {
   color: white;
 }
 
-.section {
+section {
   width: 100%;
 }
 
@@ -156,13 +193,17 @@ li {
 
 .section-projects {
   margin-top: 100px;
+  position: relative;
 }
 
 .project-block {
   width: 1385px;
   height: 527px;
-  position: relative;
   margin-bottom: 140px;
+}
+
+.project-block-left {
+  margin-top: 89px;
 }
 
 .project-content-container {
@@ -180,9 +221,30 @@ li {
   z-index: 1000;
 }
 
+.button-projects {
+  margin: 28px 0 60px 0;
+}
+
 .project-text {
   margin-left: 70px;
-  margin-bottom: 25px;
+  margin-bottom: 17px;
+}
+
+.project-text__two {
+  margin-left: 0;
+  margin-right: 64px;
+}
+
+.project-text p {
+  line-height: 30px;
+}
+
+.project-text h2 {
+  margin-bottom: 19px;
+}
+
+.project-marker {
+  margin-right: 10px;
 }
 
 .project-rectangle {
@@ -193,13 +255,13 @@ li {
 
 .project-rectangle-one {
   background-color: #55B7FF;
-  top: 0;
+  left: 0;
 }
 
 .project-rectangle-two {
   background-color: #7E5AFF;
-  right: -215px;
-  top: 0;
+  right: 0;
+  top: 840px;
 }
 
 .project-content-right {
@@ -228,14 +290,15 @@ li {
 }
 
 .news-slider {
-  width: 1173px;
+  width: 1200px;
 }
 
 .news-card {
   width: 370px;
   height: 514px;
   background-color: white;
-  margin-right: 30px;
+  margin-right: 15px;
+  margin-left: 15px;
 }
 
 .news-card-content {
@@ -249,10 +312,12 @@ li {
 .news-card-content h4 {
   font-weight: bold;
   color: #2C4058;
+  margin-bottom: 30px;
 }
 
 .news-card-content p {
   color: #2C4058;
+  margin-bottom: 39px;
 }
 
 .news-author {
@@ -280,6 +345,27 @@ li {
   width: 60px;
   height: 60px;
   border-radius: 50%;
+}
+
+.slick-prev, .slick-next {
+  top: 245px;
+}
+
+.slick-next {
+  right: -60px;
+}
+
+.slick-prev {
+  left: -90px;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  font-size: 40px;
+}
+
+.news-slider > .slick-dots {
+  bottom: -75px;
 }
 
 .section-gallery {
@@ -333,6 +419,85 @@ li {
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
   border: 1px solid #2C4058;
+}
+
+.contact-map {
+  width: 100%;
+  height: 700px;
+}
+
+#map {
+  height: 700px;
+}
+
+footer {
+  width: 100%;
+  height: 549px;
+  background-image: url(/images/footerbg.png), linear-gradient(90deg, #55B7FF, #7E5AFF);
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-content {
+  width: 770px;
+  height: 112px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+}
+
+.footer-row1 {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.footer-social {
+  display: flex;
+  color: white;
+}
+
+.footer-row2 {
+  align-self: flex-end;
+}
+
+.footer-row2 p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  color: white;
+}
+
+.section-contact {
+  position: relative;
+}
+
+.contact-block {
+  width: 770px;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  background-color: white;
+  top: 400px;
+  left: 50%;
+  margin-left: -385px;
+}
+
+.contact-block hr {
+  margin-top: 60px;
+}
+
+.contact-block__contact {
+  display: flex;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
 }
 
 /*# sourceMappingURL=index.css.map */
