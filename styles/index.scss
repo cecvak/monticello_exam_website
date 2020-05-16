@@ -12,11 +12,11 @@ h2 {
     margin: 0;
 }
 
-h2.blue {
+.text--blue {
     color: colors.$blue;
 }
 
-h2.white {
+.text--white {
     color:white;
 }
 
@@ -32,19 +32,22 @@ h5 {
     margin: 0;
 }
 
-p {
+.text {
     @include fonts.p;
     margin: 0;
 }
 
-p.small-italic {
+.text--small {
     font-size: 15px;
+}
+
+.text--italic {
     font-style: italic;
 }
 
 
 body {
-    // width: 1600px;
+    min-width: 1600px;
     width: 100%;
     // -ms-overflow-style: none;
     // overflow-y: scroll;
@@ -55,7 +58,7 @@ body {
 //     display: none;
 // }
 
-header {
+.header {
     background-image: url(/images/tu-tram-pham-202263.png), linear-gradient(90deg, #55B7FF, #7E5AFF);
     background-size: cover;
     // min-height: 100vh;
@@ -69,7 +72,7 @@ header {
     position: relative;
 }
 
-nav {
+.navigation {
     width: 1170px;
     height: 54px;
     display: flex;
@@ -85,7 +88,7 @@ nav {
     height: 54px;
 }
 
-nav .logo {
+.navigation .logo {
     margin-right: 144px;
 }
 
@@ -98,16 +101,16 @@ li {
     list-style: none;
 }
 
-.navigation-menu {
+.menu {
     width: 515px;
     justify-content: space-between;
 }
 
-.navigation-menu-item {
+.menu__item {
     color: white;
 }
 
-.navigation-social {
+.menu-social {
     width: 160px;
     justify-content: space-between;
     margin-left: 110px;
@@ -200,7 +203,7 @@ section {
     width: 100%;
 }
 
-.section-line {
+.section__line {
     width: 100px;
     height: 1px;
     color: colors.$blue;
@@ -214,14 +217,16 @@ section {
 }
 
 .section-projects {
+    display: flex;
+    flex-direction: column;
     margin-top: 100px;
     position: relative;
 }
 
 .project-block {
-    width: 1385px;
+    // width: 1385px;
     height: 527px;
-    
+    width: 100%;
     // align-content: flex-end;
     // position: relative;
     margin-bottom: 140px;
@@ -229,16 +234,18 @@ section {
 
 .project-block-left {
     margin-top: 89px;
+    justify-content: center;
+    align-items: center;
 }
 
-.project-content-container {
+.project-container {
     display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
+    justify-content: center;
+    align-items: center;
     height: 100%;
 }
 
-.project-content {
+.project-container__content {
     width: 1172px;
     height: 470px;
     display: flex;
@@ -248,16 +255,16 @@ section {
     // align-content: flex-end;
 }
 
-.button-projects {
+.button--projects {
     margin: 28px 0 60px 0;
 }
 
-.project-text {
+.project__text {
     margin-left: 70px;
     margin-bottom: 17px;
 }
 
-.project-text__two {
+.project__text__two {
     margin-left: 0;
     margin-right: 64px;
 }
@@ -301,8 +308,9 @@ section {
 
 .project-block-right {
     display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
 }
 
 .section-news {
@@ -337,17 +345,17 @@ section {
     // background-color: white;
 }
 
-.news-image {
+.news__image {
     width: 100%;
 }
 
-.news-card-content h4 {
+.news-card__header {
     font-weight: bold;
     color: colors.$blue;
     margin-bottom: 30px;
 }
 
-.news-card-content p {
+.news-card__text {
     color: colors.$blue;
     margin-bottom: 39px;
 }
@@ -369,17 +377,17 @@ section {
     // align-content: center;
 }
 
-.news-author-text p {
+.news-author__text {
     font-family: fonts.$font-family-montserrat;
     margin: 0 0 6px 20px;
 }
 
-.news-author-text .text-small {
+.news-author__date {
     font-size: 14px;
     // margin-bottom: 8px;
 }
 
-.author-img {
+.news-author__img {
     width: 60px;
     height: 60px;
     border-radius: 50%;
@@ -427,7 +435,7 @@ section {
     // align-content: center;
 }
 
-.gallery-grid-container {
+.gallery-grid {
     margin-top: 89px;
     margin-bottom: 60px;
     width: 1170px;
@@ -438,32 +446,32 @@ section {
     grid-gap: 5px;
 }
 
-.gallery-grid-item1 {
+.gallery-grid__item1 {
     grid-column: 1 /3;
     grid-row: 1 / 3;
 }
 
-.gallery-grid-item2 {
+.gallery-grid__item2 {
     grid-column: 3 /4;
     grid-row: 1 / 2;
 }
 
-.gallery-grid-item3 {
+.gallery-grid__item3 {
     grid-column: 4 /5;
     grid-row: 1 / 2;
 }
 
-.gallery-grid-item4 {
+.gallery-grid__item4 {
     grid-column: 3 /4;
     grid-row: 2 / 3;
 }
 
-.gallery-grid-item5 {
+.gallery-grid__item5 {
     grid-column: 4 /5;
     grid-row: 2 / 3;
 }
 
-.button-large {
+.button--large {
     width: 190px;
     height: 50px;
     background-color: white;
@@ -472,7 +480,7 @@ section {
     border: 1px solid colors.$blue;
 }
 
-.contact-map {
+.contact__map {
     width: 100%;
     height: 700px;
 }
@@ -481,7 +489,7 @@ section {
     height: 700px;
 }
 
-footer {
+.footer {
     width: 100%;
     height: 549px;
     background-image: url(/images/footerbg.png), linear-gradient(90deg, #55B7FF, #7E5AFF);
@@ -541,15 +549,15 @@ footer {
     margin-left: -385px;
 }
 
-.contact-block hr{
+.contact-block .section__line{
     margin-top: 60px;
 }
 
-.contact-block__contact {
+.contact-block__content {
     display: flex;
 }
 
-form {
+.form {
     display: flex;
     flex-direction: column;
 }

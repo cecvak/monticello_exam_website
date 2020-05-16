@@ -16,11 +16,11 @@
 </head>
 <body>
     <main>
-        <header>
-            <nav>
+        <header class="header">
+            <nav class="navigation">
                 <img src="/images/logo.png" alt="Monticello log" class="logo">
-                <ul class="navigation-menu">
-                    <li class="navigation-menuItem">
+                <ul class="menu">
+                    <li class="menu__item">
                         <img class="dot" src="images/circle-solid.svg" alt="">
                         ABOUT US
                         <!-- <svg height="9" width="9">
@@ -29,7 +29,7 @@
                         </svg>  -->
                         
                     </li>
-                    <li class="navigation-menuItem">
+                    <li class="menu__item">
                         <img class="dot" src="images/circle-regular.svg" alt="">
                         <!-- <svg height="9" width="9">
                             <circle cx="5" cy="5" r="4" stroke="white" stroke-width="1" fill="none" />
@@ -37,7 +37,7 @@
                         </svg>  -->
                         PROJECTS
                     </li>
-                    <li class="navigation-menuItem">
+                    <li class="menu__item">
                         <img class="dot" src="images/circle-regular.svg" alt="">
                         <!-- <svg height="9" width="9">
                             <circle cx="5" cy="5" r="4" stroke="white" stroke-width="1" fill="none" />
@@ -45,7 +45,7 @@
                         </svg> -->
                         NEWS
                     </li>
-                    <li class="navigation-menuItem">
+                    <li class="menu__item">
                         <img class="dot" src="images/circle-regular.svg" alt="">
                         <!-- <svg height="9" width="9">
                             <circle cx="5" cy="5" r="4" stroke="white" stroke-width="1" fill="none" />
@@ -54,10 +54,10 @@
                         CONTACT
                     </li>
                 </ul>
-                <ul class="navigation-social">
-                    <li class="navigation-social-logo"><i class="fab fa-facebook-f"></i></li>
-                    <li class="navigation-social-logo"><i class="fab fa-twitter"></i></li>
-                    <li class="navigation-social-logo"><i class="fab fa-instagram"></i></li>
+                <ul class="menu-social">
+                    <li><i class="fab fa-facebook-f"></i></li>
+                    <li><i class="fab fa-twitter"></i></li>
+                    <li><i class="fab fa-instagram"></i></li>
                 </ul>
 
             </nav>
@@ -96,21 +96,21 @@
 
         <section class="section-projects" id="projects">
             <!-- small line -->
-            <hr class="section-line">
-            <h2 class="section-heading blue">WHAT WE DO</h2>
+            <hr class="section__line">
+            <h2 class="section-heading text--blue">WHAT WE DO</h2>
 
             <div class="project-block project-block-left" >
                 <!-- blue rectangle -->
                 <div class="project-rectangle project-rectangle-one"> </div>
-                <div class="project-content-container">
-                    <div class="project-content" >
+                <div class="project-container">
+                    <div class="project-container__content" >
                         <img src="/images/building_one.png" alt="Building">
-                        <div class="project-text" >
+                        <div class="project__text" >
                             <h4>ONE WORLD</h4>
                             <h2>TRADE CENTER</h2>
-                            <p>Increasing prosperity in our lives can be accomplished by having the right frame of mind. The truth is, our thoughts are very powerful.</p>
-                            <button class="button-large button-projects">MORE DETAILS</button>
-                            <p class="small-italic"><i class="fas fa-map-marker-alt project-marker"></i>New York City, United States - 1776 feet</p>
+                            <p class="text">Increasing prosperity in our lives can be accomplished by having the right frame of mind. The truth is, our thoughts are very powerful.</p>
+                            <button class="button--large button--projects">MORE DETAILS</button>
+                            <p class="text text--small text--italic"><i class="fas fa-map-marker-alt project-marker"></i>New York City, United States - 1776 feet</p>
                         </div>
                     </div>
                 </div>
@@ -119,15 +119,15 @@
             <div class="project-block project-block-right">
                 <!-- purple rectangle -->
                 <div class="project-rectangle project-rectangle-two"> </div>
-                <div class="project-content-container ">
-                    <div class="project-content project-content-right" >
+                <div class="project-container ">
+                    <div class="project-container__content project-content-right" >
                         <img src="/images/building_two.png" alt="Building">
-                        <div class="project-text project-text__two" >
+                        <div class="project__text project__text__two" >
                             <h4>INTERNATIONAL</h4>
                             <h2>COMMERCE CENTRE</h2>
-                            <p>Successful businesses have many things in common, today we’ll look at the big ‘R’ of recognition and how a digital advertising network may help.</p>
-                            <button class="button-large button-projects">MORE DETAILS</button>
-                            <p class="small-italic"><i class="fas fa-map-marker-alt project-marker"></i>Hong Kong - 1588 feet</p>
+                            <p class="text">Successful businesses have many things in common, today we’ll look at the big ‘R’ of recognition and how a digital advertising network may help.</p>
+                            <button class="button--large button--projects">MORE DETAILS</button>
+                            <p class="text text--small text--italic"><i class="fas fa-map-marker-alt project-marker"></i>Hong Kong - 1588 feet</p>
                         </div>
                     </div>
                 </div>
@@ -135,84 +135,83 @@
         </section>
 
         <section class="section-news">
-            <hr class="section-line">
-            <h2 class="section-heading white">LATEST NEWS</h2>
+            <hr class="section__line">
+            <h2 class="section-heading text--white">LATEST NEWS</h2>
 
             <div class="news-slider-container">
-
-            
+   
             <div class="news-slider">
                 <!-- card one -->
                 <div class="news-card">
-                    <img class="news-image" src="/images/house1.png" alt="House">
+                    <img class="news__image" src="/images/house1.png" alt="House">
                     <div class="news-card-content">
-                        <h4>SEE THE UNMATCHED BEAUTY OF THE GREAT.</h4>
-                        <p>Free directories: directories are perfect for customers that are searching for...</p>
+                        <h4 class="news-card__header">SEE THE UNMATCHED BEAUTY OF THE GREAT.</h4>
+                        <p class="text news-card__text">Free directories: directories are perfect for customers that are searching for...</p>
                     <div class="news-author">
-                        <img class="author-img" src="/images/alja.png" alt="">
-                        <div class="news-author-text">
+                        <img class="news-author__img" src="/images/alja.png" alt="">
+                        <div class="news-author__text">
                             <p>ALJA BRUN</p>
-                            <p class="text-small">20 Jan 2020</p>
+                            <p class="news-author__date">20 Jan 2020</p>
                         </div>
                     </div>
                     </div>
                 </div>
                 <!-- card two -->
                 <div class="news-card">
-                    <img class="news-image" src="/images/house2.png" alt="House">
+                    <img class="news__image" src="/images/house2.png" alt="House">
                     <div class="news-card-content">
-                        <h4>EFFECTIVE ADVERTISING POINTERS.</h4>
-                        <p>Having a home based business is a wonderful asset to your life...</p>
+                        <h4 class="news-card__header">EFFECTIVE ADVERTISING POINTERS.</h4>
+                        <p class="text news-card__text">Having a home based business is a wonderful asset to your life...</p>
                     <div class="news-author">
-                        <img class="author-img" src="/images/dominic.png" alt="">
-                        <div class="news-author-text">
+                        <img class="news-author__img" src="/images/dominic.png" alt="">
+                        <div class="news-author__text">
                             <p>DOMINIC FREEMAN</p>
-                            <p class="text-small">13 Dec 2019</p>
+                            <p class="news-author__date">13 Dec 2019</p>
                         </div>
                     </div>
                     </div>
                 </div>
                 <!-- card three -->
                 <div class="news-card">
-                    <img class="news-image" src="/images/house3.png" alt="House">
+                    <img class="news__image" src="/images/house3.png" alt="House">
                     <div class="news-card-content">
-                        <h4>HYPNOTIZE YOURSELF INTO THE GHOST.</h4>
-                        <p>There are many things that are important to catalog design...</p>
+                        <h4 class="news-card__header">HYPNOTIZE YOURSELF INTO THE GHOST.</h4>
+                        <p class="text news-card__text">There are many things that are important to catalog design...</p>
                     <div class="news-author">
-                        <img class="author-img" src="/images/alice.png" alt="">
-                        <div class="news-author-text">
+                        <img class="news-author__img" src="/images/alice.png" alt="">
+                        <div class="news-author__text">
                             <p>ALICE WARD</p>
-                            <p class="text-small">30 Nov 2019</p>
+                            <p class="news-author__date">30 Nov 2019</p>
                         </div>
                     </div>
                     </div>
                 </div>
                 <!-- card four -->
                 <div class="news-card">
-                    <img class="news-image" src="/images/house1.png" alt="House">
+                    <img class="news__image" src="/images/house1.png" alt="House">
                     <div class="news-card-content">
-                        <h4>SEE THE UNMATCHED BEAUTY OF THE GREAT.</h4>
-                        <p>Free directories: directories are perfect for customers that are searching for...</p>
+                        <h4 class="news-card__header">SEE THE UNMATCHED BEAUTY OF THE GREAT.</h4>
+                        <p class="text news-card__text">Free directories: directories are perfect for customers that are searching for...</p>
                     <div class="news-author">
-                        <img class="author-img" src="/images/alja.png" alt="">
-                        <div class="news-author-text">
+                        <img class="news-author__img" src="/images/alja.png" alt="">
+                        <div class="news-author__text">
                             <p>ALJA BRUN</p>
-                            <p class="text-small">20 Jan 2020</p>
+                            <p class="news-author__date">20 Jan 2020</p>
                         </div>
                     </div>
                     </div>
                 </div>
                 <!-- card five -->
                 <div class="news-card">
-                    <img class="news-image" src="/images/house1.png" alt="House">
+                    <img class="news__image" src="/images/house1.png" alt="House">
                     <div class="news-card-content">
-                        <h4>SEE THE UNMATCHED BEAUTY OF THE GREAT.</h4>
-                        <p>Free directories: directories are perfect for customers that are searching for...</p>
+                        <h4 class="news-card__header">SEE THE UNMATCHED BEAUTY OF THE GREAT.</h4>
+                        <p class="text news-card__text">Free directories: directories are perfect for customers that are searching for...</p>
                     <div class="news-author">
-                        <img class="author-img" src="/images/alja.png" alt="">
-                        <div class="news-author-text">
+                        <img class="news-author__img" src="/images/alja.png" alt="">
+                        <div class="news-author__text">
                             <p>ALJA BRUN</p>
-                            <p class="text-small">20 Jan 2020</p>
+                            <p class="news-author__date">20 Jan 2020</p>
                         </div>
                     </div>
                     </div>
@@ -222,37 +221,37 @@
     </section>
 
         <section class="section-gallery">
-            <hr class="section-line">
-            <h2 class="section-heading blue">GALLERY</h2>
+            <hr class="section__line">
+            <h2 class="section-heading text--blue">GALLERY</h2>
         
 
             <!-- gallery grid -->
-            <div class="gallery-grid-container">
-                <div class="gallery-grid-item1"><img src="/images/gallery1.png" alt=""></div>
-                <div class="gallery-grid-item2"><img src="/images/gallery2.png" alt=""></div>
-                <div class="gallery-grid-item3"><img src="/images/gallery3.png" alt=""></div>
-                <div class="gallery-grid-item4"><img src="/images/gallery4.png" alt=""></div>
-                <div class="gallery-grid-item5"><img src="/images/gallery5.png" alt=""></div>
+            <div class="gallery-grid">
+                <div class="gallery-grid__item1"><img src="/images/gallery1.png" alt=""></div>
+                <div class="gallery-grid__item2"><img src="/images/gallery2.png" alt=""></div>
+                <div class="gallery-grid__item3"><img src="/images/gallery3.png" alt=""></div>
+                <div class="gallery-grid__item4"><img src="/images/gallery4.png" alt=""></div>
+                <div class="gallery-grid__item5"><img src="/images/gallery5.png" alt=""></div>
             </div>
-            <button class="button-large">SEE MORE</button>
+            <button class="button--large">SEE MORE</button>
         </section>
 
         <section class="section-contact">
             <!-- map -->
-            <div class="contact_map" id="map">
+            <div class="contact__map" id="map">
             </div>
             <!-- contact form -->
             <div class="contact-block">
-                <hr class="section-line">
-                <h2 class="section-heading blue">GET IN TOUCH</h2>
-                <div class="contact-block__contact">
-                    <div class="contact-address">
-                        <p>91 Nolan Extensions Suite 670</p>
-                        <p>+001 356-868-2454</p>
-                        <p>montichello@service.com</p>
-                        <p>From 07:05AM to 19:30PM</p> 
+                <hr class="section__line">
+                <h2 class="section-heading text--blue">GET IN TOUCH</h2>
+                <div class="contact-block__content">
+                    <div class="contact__address">
+                        <p class="text">91 Nolan Extensions Suite 670</p>
+                        <p class="text">+001 356-868-2454</p>
+                        <p class="text">montichello@service.com</p>
+                        <p class="text">From 07:05AM to 19:30PM</p> 
                     </div>
-                    <form action="">
+                    <form class="form" action="">
                         <input type="text" id="name" name="name" placeholder="Your name">
                         <input type="text" id="email" name="email" placeholder="Email">
                         <button>SUBMIT</button>
@@ -262,11 +261,11 @@
 
         </section>
 
-        <footer>
+        <footer class="footer">
             <div class="footer-content">
                 <div class="footer-row1">
                     <img src="/images/logo.png" alt="" class="logo">
-                    <div class="footer-social navigation-social">
+                    <div class="footer-social menu-social">
                         <p><i class="fab fa-facebook-f"></i></p>
                         <p><i class="fab fa-twitter"></i></p>
                         <p><i class="fab fa-instagram"></i></p>
