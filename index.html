@@ -18,46 +18,55 @@
     <main>
         <header class="header">
             <nav class="navigation">
-                <img src="/images/logo.png" alt="Monticello log" class="logo">
+                <a href="#"><img src="/images/logo.png" alt="Monticello log" class="logo"></a>
                 <ul class="menu">
                     <li class="menu__item">
-                        <img class="dot" src="images/circle-solid.svg" alt="">
+                        <a href="#">
+                            <img class="dot" src="images/circle-solid.svg" alt="">
                         ABOUT US
                         <!-- <svg height="9" width="9">
                             <circle cx="5" cy="5" r="4" stroke="white" stroke-width="1" fill="white" />
                             Sorry, your browser does not support inline SVG.  
                         </svg>  -->
-                        
+                        </a>
                     </li>
                     <li class="menu__item">
-                        <img class="dot" src="images/circle-regular.svg" alt="">
-                        <!-- <svg height="9" width="9">
-                            <circle cx="5" cy="5" r="4" stroke="white" stroke-width="1" fill="none" />
-                            Sorry, your browser does not support inline SVG.  
-                        </svg>  -->
-                        PROJECTS
+                        <a href="#projects">
+                            <img class="dot" src="images/circle-regular.svg" alt="">
+                            <!-- <svg height="9" width="9">
+                                <circle cx="5" cy="5" r="4" stroke="white" stroke-width="1" fill="none" />
+                                Sorry, your browser does not support inline SVG.  
+                            </svg>  -->
+                            PROJECTS
+                         </a>
                     </li>
                     <li class="menu__item">
-                        <img class="dot" src="images/circle-regular.svg" alt="">
+                        <a href="#news">
+                            <img class="dot" src="images/circle-regular.svg" alt="">
                         <!-- <svg height="9" width="9">
                             <circle cx="5" cy="5" r="4" stroke="white" stroke-width="1" fill="none" />
                             Sorry, your browser does not support inline SVG.  
                         </svg> -->
                         NEWS
+                        </a>
+                        
                     </li>
                     <li class="menu__item">
-                        <img class="dot" src="images/circle-regular.svg" alt="">
+                        <a href="#contact">
+                            <img class="dot" src="images/circle-regular.svg" alt="">
                         <!-- <svg height="9" width="9">
                             <circle cx="5" cy="5" r="4" stroke="white" stroke-width="1" fill="none" />
                             Sorry, your browser does not support inline SVG.  
                         </svg> -->
                         CONTACT
+                        </a>
+                        
                     </li>
                 </ul>
                 <ul class="menu-social">
-                    <li><i class="fab fa-facebook-f"></i></li>
-                    <li><i class="fab fa-twitter"></i></li>
-                    <li><i class="fab fa-instagram"></i></li>
+                    <li><a href="#"> <i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
                 </ul>
 
             </nav>
@@ -104,12 +113,12 @@
                 <div class="project-rectangle project-rectangle-one"> </div>
                 <div class="project-container">
                     <div class="project-container__content" >
-                        <img src="/images/building_one.png" alt="Building">
-                        <div class="project__text" >
+                        <img class="project__image" src="/images/building_one.png" alt="Building">
+                        <div class="project__text project__text__one" >
                             <h4>ONE WORLD</h4>
-                            <h2>TRADE CENTER</h2>
-                            <p class="text">Increasing prosperity in our lives can be accomplished by having the right frame of mind. The truth is, our thoughts are very powerful.</p>
-                            <button class="button--large button--projects">MORE DETAILS</button>
+                            <h2 class="project__heading">TRADE CENTER</h2>
+                            <p class="text project__p">Increasing prosperity in our lives can be accomplished by having the right frame of mind. The truth is, our thoughts are very powerful.</p>
+                            <button class="button--large button--projects button--projects__one">MORE DETAILS</button>
                             <p class="text text--small text--italic"><i class="fas fa-map-marker-alt project-marker"></i>New York City, United States - 1776 feet</p>
                         </div>
                     </div>
@@ -119,14 +128,14 @@
             <div class="project-block project-block-right">
                 <!-- purple rectangle -->
                 <div class="project-rectangle project-rectangle-two"> </div>
-                <div class="project-container ">
+                <div class="project-container project-container__two ">
                     <div class="project-container__content project-content-right" >
-                        <img src="/images/building_two.png" alt="Building">
+                        <img class="project__image" src="/images/building_two.png" alt="Building">
                         <div class="project__text project__text__two" >
                             <h4>INTERNATIONAL</h4>
-                            <h2>COMMERCE CENTRE</h2>
-                            <p class="text">Successful businesses have many things in common, today we’ll look at the big ‘R’ of recognition and how a digital advertising network may help.</p>
-                            <button class="button--large button--projects">MORE DETAILS</button>
+                            <h2 class="project__heading">COMMERCE CENTRE</h2>
+                            <p class="text project__p">Successful businesses have many things in common, today we’ll look at the big ‘R’ of recognition and how a digital advertising network may help.</p>
+                            <button class="button--large button--projects button--projects__two">MORE DETAILS</button>
                             <p class="text text--small text--italic"><i class="fas fa-map-marker-alt project-marker"></i>Hong Kong - 1588 feet</p>
                         </div>
                     </div>
@@ -134,7 +143,7 @@
             </div>
         </section>
 
-        <section class="section-news">
+        <section class="section-news" id="news">
             <hr class="section__line">
             <h2 class="section-heading text--white">LATEST NEWS</h2>
 
@@ -227,16 +236,16 @@
 
             <!-- gallery grid -->
             <div class="gallery-grid">
-                <div class="gallery-grid__item1"><img src="/images/gallery1.png" alt=""></div>
-                <div class="gallery-grid__item2"><img src="/images/gallery2.png" alt=""></div>
-                <div class="gallery-grid__item3"><img src="/images/gallery3.png" alt=""></div>
-                <div class="gallery-grid__item4"><img src="/images/gallery4.png" alt=""></div>
-                <div class="gallery-grid__item5"><img src="/images/gallery5.png" alt=""></div>
+                <div class="gallery-grid__item1"><a href=""><img class="gallery__image" src="/images/gallery1.png" alt="House A"></a> </div>
+                <div class="gallery-grid__item2"><a href=""> <img class="gallery__image" src="/images/gallery2.png" alt="House B"></a></div>
+                <div class="gallery-grid__item3"><a href=""><img class="gallery__image" src="/images/gallery3.png" alt="House C"></a> </div>
+                <div class="gallery-grid__item4"><a href=""><img class="gallery__image" src="/images/gallery4.png" alt="House D"></a> </div>
+                <div class="gallery-grid__item5"><a href=""><img class="gallery__image" src="/images/gallery5.png" alt="House E"></a> </div>
             </div>
             <button class="button--large">SEE MORE</button>
         </section>
 
-        <section class="section-contact">
+        <section class="section-contact" id="contact">
             <!-- map -->
             <div class="contact__map" id="map">
             </div>
@@ -246,16 +255,24 @@
                 <h2 class="section-heading text--blue">GET IN TOUCH</h2>
                 <div class="contact-block__content">
                     <div class="contact__address">
-                        <p class="text">91 Nolan Extensions Suite 670</p>
-                        <p class="text">+001 356-868-2454</p>
-                        <p class="text">montichello@service.com</p>
-                        <p class="text">From 07:05AM to 19:30PM</p> 
+                        <h5 class="contact__address__text"><i class="fas fa-map-marker-alt project-marker"></i>91 Nolan Extensions Suite 670
+                        <br><br>
+                        <i class="fas fa-phone-alt"></i>+001 356-868-2454
+                        <br><br>
+                        <i class="fas fa-inbox"></i>montichello@service.com
+                        <br><br>
+                        <i class="far fa-clock"></i>From 07:05AM to 19:30PM</h5> 
                     </div>
-                    <form class="form" action="">
-                        <input type="text" id="name" name="name" placeholder="Your name">
-                        <input type="text" id="email" name="email" placeholder="Email">
-                        <button>SUBMIT</button>
+                    <div class="form--container">
+                        <form class="form" action="">
+                        <input type="text" id="name" name="name" placeholder="Your name" required>
+                        <input type="text" id="email" name="email" placeholder="Email" required>
+                        <span></span>
+                        <button type="button" class="button--small button__submit">SUBMIT</button>
                     </form>
+                    </div>
+                    
+                    
                 </div>
             </div>
 

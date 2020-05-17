@@ -1,3 +1,37 @@
+// click submit button to submit and hide form, show new text
+$('.button__submit').click(function() {
+  let email = $('#email').val();
+  
+  if ( $('#name').val() === "") {
+    $('span').text("Please fill in your name.").show();
+  }
+
+  
+  else if ( email.includes('@')== false) {
+    $('span').text("Email address need to be entered correctly.").show();
+  }
+
+  else {
+    $('form').hide();
+  let thanks = `<p>Thank you! We will be in touch.</p>`;
+  $('.form--container').append(thanks);
+  }
+  
+});
+
+
+// smooth scroll on links in menu and arrow
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+
+      document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+      });
+  });
+});
+
+// slider in header
 $(document).ready(function(){
     $('.header-slider').slick({
       dots: true,
@@ -7,6 +41,7 @@ $(document).ready(function(){
     });
 });
       
+// slider in news section
 $(document).ready(function(){
   $('.news-slider').slick({
     infinite: true,
@@ -17,6 +52,7 @@ $(document).ready(function(){
   });
 });
 
+// map
 let monticello = {lat: 40.678177, lng: -73.944160}
 let icon = {
   url: '/images/pin.png',
