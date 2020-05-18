@@ -665,6 +665,7 @@ section {
 .footer-social {
     display: flex;
     color: white;
+    margin-top: 6px;
 }
 
 .footer-row2 {
@@ -717,6 +718,12 @@ section {
     line-height: 28px;
 }
 
+.contact__icon {
+    color: #7E5AFF;
+    font-size: 14px;
+    margin-right: 6px;
+}
+
 .form {
     display: flex;
     flex-direction: column;
@@ -727,16 +734,43 @@ section {
 .form input {
     width: 100%;
     font-size: 18px;
-    padding: 23px 0;
+    padding-bottom: 23px;
     font-family: fonts.$font-family-montserrat;
     border: none;
     border-bottom: 1px solid colors.$blue;
+    outline: none;
 }
 
 .form input:nth-child(2) {
-    // margin-top: 33px;
     margin-bottom: 30px;
+    margin-top: 33px;
 }
+
+.form input:focus {
+    border: 1px solid colors.$blue;
+}
+
+.form input:valid {
+    border: 1px solid colors.$blue;
+}
+
+// .form input:focus:invalid {
+//     border: 1px solid red;
+// }
+
+.form--thanks {
+    // visibility: hidden;
+    width: 230px;
+    height: 170px;
+    padding: 20px;
+    display: none;
+    font-family: fonts.$font-family-montserrat;
+    font-size: 18px;
+    // font-weight: bold;
+    color: #55B7FF;
+    border: 1px solid colors.$blue;;
+}
+
 
 .button--small {
     width: 140px;
@@ -747,6 +781,11 @@ section {
     border: 1px solid colors.$blue;
     // margin-top: 30px;
     align-self: flex-end;
+}
+
+.button__submit:hover {
+    background-color: colors.$blue;
+    color: white;
 }
 
 

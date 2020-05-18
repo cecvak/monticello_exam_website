@@ -1,9 +1,13 @@
+
 // click submit button to submit and hide form, show new text
 $('.button__submit').click(function() {
   let email = $('#email').val();
+  document.getElementById('form-span').style.color = 'red';
+  // let text1 = `<p>*Please fill in your name.<p>`
   
   if ( $('#name').val() === "") {
     $('span').text("Please fill in your name.").show();
+    // $('span').append(text1);
   }
 
   
@@ -13,8 +17,9 @@ $('.button__submit').click(function() {
 
   else {
     $('form').hide();
-  let thanks = `<p>Thank you! We will be in touch.</p>`;
-  $('.form--container').append(thanks);
+  // let thanks = `<p>Thank you! We will be in touch.</p>`;
+  // $('.form--container').append(thanks);
+    $('.form--thanks:hidden').show();
   }
   
 });

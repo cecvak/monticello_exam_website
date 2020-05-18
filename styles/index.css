@@ -587,6 +587,7 @@ section {
 .footer-social {
   display: flex;
   color: white;
+  margin-top: 6px;
 }
 
 .footer-row2 {
@@ -635,6 +636,12 @@ section {
   line-height: 28px;
 }
 
+.contact__icon {
+  color: #7E5AFF;
+  font-size: 14px;
+  margin-right: 6px;
+}
+
 .form {
   display: flex;
   flex-direction: column;
@@ -644,14 +651,35 @@ section {
 .form input {
   width: 100%;
   font-size: 18px;
-  padding: 23px 0;
+  padding-bottom: 23px;
   font-family: "Montserrat", sans-serif;
   border: none;
   border-bottom: 1px solid #2C4058;
+  outline: none;
 }
 
 .form input:nth-child(2) {
   margin-bottom: 30px;
+  margin-top: 33px;
+}
+
+.form input:focus {
+  border: 1px solid #2C4058;
+}
+
+.form input:valid {
+  border: 1px solid #2C4058;
+}
+
+.form--thanks {
+  width: 230px;
+  height: 170px;
+  padding: 20px;
+  display: none;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  color: #55B7FF;
+  border: 1px solid #2C4058;
 }
 
 .button--small {
@@ -662,6 +690,11 @@ section {
   font-size: 18px;
   border: 1px solid #2C4058;
   align-self: flex-end;
+}
+
+.button__submit:hover {
+  background-color: #2C4058;
+  color: white;
 }
 
 @media only screen and (max-width: 1200px) {
