@@ -97,7 +97,7 @@
                 </div>
 
                 <!-- arrow -->
-                <div class="header-bottom"><a href="#projects"><i class="fas fa-chevron-circle-down header-arrow"></i></a></div>
+                <div class="header-bottom"><a href="#projects"><img src="/images/multimedia-option.svg" class="header-arrow" alt="arrow"></a></div>
 
             </div>
             
@@ -269,8 +269,10 @@
                     <div class="form--container">
                         <form class="form" action="">
                             <input type="text" id="name" name="name" placeholder="Your name" required>
-                            <input type="text" id="email" name="email" placeholder="Email" required>
-                            <span id="form-span"></span>
+                            <span class="form-span span-name">Enter your name.</span>
+                            <input type="text" class="email" id="email" name="email" placeholder="Email" required>
+                            <span class="form-span" id="enterEmail">Enter your email address.</span>
+                            <span class="form-span" id="invalid">Invalid email address.</span>
                             <button type="button" class="button--small button__submit">SUBMIT</button>
                         </form>
                         <div class="form--thanks">Thank you! We will be in touch as soon as possible.</div>

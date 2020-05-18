@@ -236,7 +236,9 @@ li {
 }
 
 .header-arrow {
-    color: white;
+    // stroke: white;
+    width: 40px;
+    transform: rotate(90deg);
 }
 
 section {
@@ -484,18 +486,27 @@ section {
 
 .slick-next {
     // right: -60px;
-    right: 125px;
+    right: 110px;
+    width: 40px;
+
 }
 
 .slick-prev {
     // left: -90px;
     left: 100px;
+    width: 40px;
+
 }
 
-.slick-prev:before,
 .slick-next:before {
-    // font-family: FontAwesome;
-    font-size: 40px;
+    content: url(/images/multimedia-option.svg);
+    width: 40px;
+}
+
+.slick-prev:before {
+    content: url(/images/multimedia-option.svg);
+    transform: rotate(180deg);
+    width: 40px;
 }
 
 .news-slider {
@@ -739,12 +750,17 @@ section {
     border: none;
     border-bottom: 1px solid colors.$blue;
     outline: none;
+    // margin-bottom: 20px;
 }
 
-.form input:nth-child(2) {
-    margin-bottom: 30px;
-    margin-top: 33px;
-}
+// .form--placeholder {
+//     height: 30px;
+// }
+
+// .form input:nth-child(2) {
+//     margin-bottom: 30px;
+//     margin-top: 33px;
+// }
 
 .form input:focus {
     border: 1px solid colors.$blue;
@@ -757,6 +773,16 @@ section {
 // .form input:focus:invalid {
 //     border: 1px solid red;
 // }
+
+.form-span {
+    // visibility: hidden;
+    height: 20px;
+    // margin-bottom: 30px;
+}
+
+.email {
+    // margin-top: 33px;
+}
 
 .form--thanks {
     // visibility: hidden;
@@ -781,6 +807,10 @@ section {
     border: 1px solid colors.$blue;
     // margin-top: 30px;
     align-self: flex-end;
+}
+
+.button__submit {
+    // margin-top: 30px;
 }
 
 .button__submit:hover {
