@@ -107,6 +107,7 @@ li {
 
 .menu__item {
   color: white;
+  height: 9px;
 }
 
 .menu__item a:link, a:visited {

@@ -2,67 +2,37 @@
 
 // click submit button to check form input, submit and hide form, show new text
 $(document).ready(function() {
-  // let mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-  
-  // $('.form-span').hide();
     $('.form-span').css('visibility', 'hidden');
-    console.log('hide span');
-  
-  
-  // let text1 = `<p>*Please fill in your name.<p>`
-  
+    console.log('hide span');  
 
   $('.button__submit').click(function() {
-    // document.getElementsByClassName('form-span').style.color = 'red';
     $('.form-span').css('color', 'red');
     let name = $('#name').val();
     let email = $('#email').val();
     if ( name === '') {
-      // $('#name').next().show();
       $('.span-name').css('visibility', 'visible');
       console.log('checking name');
       return false;
-      // $('span').text("Please fill in your name.").show();
-      // $('span').append(text1);
-      // return;
     }
 
     if (email === '') {
-      // $('span').text("Please enter an email address.").show();
-      // $('#email').next().show();
       $('#enterEmail').css('visibility', 'visible');
       console.log('checking for email');
       return false;
     }
 
-   if (isEmail(email) == false) {
-      // $('#invalid').show();
+    if (isEmail(email) == false) {
       $('#invalid').css('visibility', 'visible');
       console.log('checking valid email');
       return false;
-      // $('span').text("Email address is not in a valid format.").show();
-      // return;
     }
-  
-  // else if  
-  //   ( email.includes('@')== false) {
-  //   $('span').text("Email address is not in a valid format.").show();
-  // }
 
-  // else {
-    // $.post("",$('.form').serialize(), function(response) {
-      $('form').hide();
-      $('.form--thanks:hidden').show();
-    // });
-   
-  // let thanks = `<p>Thank you! We will be in touch.</p>`;
-  // $('.form--container').append(thanks);
-   
-  // }
+    $('form').hide();
+    $('.form--thanks:hidden').show();
   
-});
-return false;
-});
+    });
+    return false;
+  });
 
 // check if email is valid
 function isEmail(email) {
@@ -118,7 +88,6 @@ let icon = {
 
 let map;
   map = new google.maps.Map(document.getElementById('map'), {
-    // center: {lat: 40.678177, lng: -73.944160},
     center: monticello,
     zoom: 13,
     styles: [
