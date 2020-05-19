@@ -57,7 +57,6 @@ main {
   width: 100%;
 }
 
-/* Hide scrollbar for Chrome, Safari and Opera */
 .header {
   background-image: url(/images/tu-tram-pham-202263.png), -webkit-gradient(linear, left top, right top, from(#55B7FF), to(#7E5AFF));
   background-image: url(/images/tu-tram-pham-202263.png), -o-linear-gradient(left, #55B7FF, #7E5AFF);
@@ -78,6 +77,7 @@ main {
   width: 100%;
   height: 54px;
   display: flex;
+  justify-content: space-between;
   align-items: center;
   font-family: "Source Sans Pro", sans-serif;
   font-size: 14px;
@@ -86,12 +86,7 @@ main {
 }
 
 .logo {
-  width: 241px;
   height: 54px;
-}
-
-.navigation .logo {
-  margin-right: 144px;
 }
 
 ul {
@@ -107,6 +102,7 @@ li {
   max-width: 515px;
   width: 100%;
   justify-content: space-between;
+  margin-left: 20px;
 }
 
 .menu__item {
@@ -120,13 +116,16 @@ li {
 
 .menu__item a:hover, a:active {
   text-decoration: none;
-  color: black;
+  color: #2C4058;
+}
+.menu__item a:hover > .dot, a:active > .dot {
+  content: url(/images/circle-solid-edit.svg);
 }
 
 .menu-social {
-  width: 160px;
+  max-width: 160px;
+  width: 100%;
   justify-content: space-between;
-  margin-left: 110px;
   margin-right: 0;
 }
 
@@ -137,7 +136,7 @@ li {
 
 .menu-social a:hover, a:active {
   text-decoration: none;
-  color: black;
+  color: #2C4058;
 }
 
 .dot {
@@ -150,16 +149,16 @@ li {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 100%;
-  padding-bottom: 50px;
+  justify-content: flex-end;
+  height: 690px;
   position: relative;
+  margin-bottom: 50px;
 }
 
 .header-slider {
   max-width: 917px;
   width: 100%;
   height: 380px;
-  margin-top: 223px;
   margin-bottom: 0;
   position: static;
 }
@@ -211,6 +210,10 @@ li {
   transform: rotate(90deg);
 }
 
+.header-arrow:hover {
+  width: 50px;
+}
+
 section {
   width: 100%;
 }
@@ -231,7 +234,7 @@ section {
 .section-projects {
   display: flex;
   flex-direction: column;
-  margin-top: 100px;
+  margin-top: 5%;
   position: relative;
 }
 
@@ -340,30 +343,40 @@ section {
 }
 
 .section-news {
-  height: 900px;
+  min-height: 1035px;
+  max-height: 1200px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   background-image: url(/images/city.png), -webkit-gradient(linear, left top, right top, from(#3C7FD4), to(#24CCFA));
   background-image: url(/images/city.png), -o-linear-gradient(left, #3C7FD4, #24CCFA);
   background-image: url(/images/city.png), linear-gradient(90deg, #3C7FD4, #24CCFA);
   background-repeat: no-repeat;
   background-position: bottom;
-  padding-top: 135px;
+  position: relative;
 }
 
 .news-slider-container {
   display: flex;
   justify-content: center;
+  max-width: 1200px;
+  width: 100%;
+  max-height: 600px;
+  height: 100%;
   margin-top: 89px;
-  position: relative;
 }
 
 .news-slider {
-  max-width: 1200px;
   width: 100%;
+  height: 100%;
   position: static;
 }
 
 .news-card {
-  width: 370px;
+  width: 100%;
+  height: 100%;
   height: 514px;
   background-color: white;
   margin-right: 15px;
@@ -419,43 +432,43 @@ section {
 }
 
 .slick-prev, .slick-next {
-  top: 245px;
+  top: 60%;
 }
 
 .slick-next {
-  right: 110px;
+  right: 5%;
   width: 40px;
 }
 
 .slick-prev {
-  left: 100px;
+  left: 5%;
   width: 40px;
+  transform: rotate(180deg);
 }
 
 .slick-next:before {
   content: url(/images/multimedia-option.svg);
-  width: 40px;
 }
 
 .slick-prev:before {
   content: url(/images/multimedia-option.svg);
-  transform: rotate(180deg);
-  width: 40px;
 }
 
 .news-slider > .slick-dots {
-  bottom: -75px;
+  bottom: 75px;
   left: 50%;
   margin-left: -105px;
   width: 210px;
 }
 
 .section-gallery {
-  padding-top: 140px;
-  padding-bottom: 139px;
+  min-height: 1000px;
+  max-height: 1200px;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
 .gallery-grid {
@@ -559,7 +572,6 @@ section {
 
 .contact__map {
   width: 100%;
-  height: 700px;
 }
 
 #map {
@@ -677,6 +689,10 @@ section {
 
 .form-span {
   height: 20px;
+}
+
+.email {
+  margin-top: 20px;
 }
 
 .form--thanks {

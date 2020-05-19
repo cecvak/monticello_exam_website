@@ -1,1 +1,13 @@
 $blue: #2C4058;
+$brightBlue: #55B7FF;
+$purple: #7E5AFF;
+
+$gradient1: #3C7FD4, #24CCFA;
+$gradient2: $brightBlue, $purple;
+
+// @mixin gradient($direction, $list) {
+//     background: -webkit-linear-gradient($direction, $list);
+//     background: -moz-linear-gradient($direction, $list);
+//     background: -o-linear-gradient($direction, $list);
+//     background: linear-gradient($direction, $list);  
+// }
